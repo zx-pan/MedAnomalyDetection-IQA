@@ -1,0 +1,1 @@
+python run.py experiment=pDDPM_IQA/DDPM_patched_Brats_FLAIR

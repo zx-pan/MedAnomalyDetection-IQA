@@ -1,0 +1,48 @@
+# @package _global_
+
+# to execute this experiment run:
+# python run.py experiment=example_full.yaml
+
+defaults:
+  - override /trainer: default.yaml # override trainer to null so it's not loaded from main config defaults...
+  - override /model: DDPM_2D_patched.yaml
+  - override /datamodule: Brats.yaml
+datamodule:
+  cfg:
+    rescaleFactor: 2
+    imageDim: [192,192,100]
+    mode: flair
+model:
+  cfg:
+    fix_timestep: False # ddpm if not fixed timestep, otherwise dae
+    test_timesteps: 750
+    dim_mults: [1,2,2]
+    unet_dim: 128
+    objective: pred_x0
+    loss: fusion_quality_loss # available: l1, ssim, fusion_quality_loss
+    residualmode: fusion_quality_loss
+    ssim_window_size: 5 # window size for ssim
+    color_reversal: True # AIC_Enhancement processing
+    OpenaiUnet: True # use openai unet
+    conv_resample: True
+    noisetype: simplex # simplex or none (Gaussian by default) or coarse
+    noise_std: 0.2 # noise std for coarse noise
+    noise_res: 16 # resolution of coarse noise
+    dropout_unet: 0.0
+    patch_size: 48 # size of the patches
+    grid_boxes: True # sample boxes from a fixed grid
+    inpaint: True # solve inpainting task -- Loss calculation only for the patched region
+start_fold: 0
+num_folds: 1
+logger:
+  wandb:
+    project: pDDPM_IQA
+
+ckpt_path: best
+
+trainer:
+  max_epochs: 1600
+  precision: 32
+
+name : pDDPM_IQA_l1ssim_train_l1ssim_test_AIC_Enhanced_Brats_FLAIR
+seed: 3141
