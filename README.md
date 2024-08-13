@@ -1,5 +1,5 @@
 <div align="center">
-<h2><a href="https://arxiv.org/pdf/2308.05695.pdf">Investigating Medical Anomaly Detection in Brain MRI: An Image Quality Assessment Perspective</a></h2>
+<h2><a href="https://arxiv.org/pdf/2308.05695.pdf">Rethinking Medical Anomaly Detection in Brain MRI: An Image Quality Assessment Perspective</a></h2>
 
 [Zixuan Pan](https://scholar.google.com/citations?user=3VuW2gcAAAAJ&hl=en), [Jun Xia](https://scholar.google.com/citations?user=K4JXEHUAAAAJ&hl=en&oi=ao), [Zheyu Yan](https://sites.nd.edu/zheyu-yan/), [Guoyue Xu](https://scholar.google.com/citations?hl=en&user=ntl9gCYAAAAJ), [Yawen Wu](https://sdwuyawen.github.io), [Zhenge Jia](https://zhengejia.github.io), [Jianxu Chen](https://scholar.google.com/citations?hl=en&user=HdolpOgAAAAJ), [Yiyu Shi](https://scholar.google.com/citations?hl=en&user=LrjbEkIAAAAJ&view_op=list_works)
 
@@ -9,7 +9,7 @@
 <div align=center><img width="500" src="model.png"/></div>
 
 Official PyTorch/GPU implementation of the paper
-[Investigating Medical Anomaly Detection in Brain MRI: An Image Quality Assessment Perspective](https://arxiv.org/abs/2308.05695).
+[Rethinking Medical Anomaly Detection in Brain MRI: An Image Quality Assessment Perspective](https://arxiv.org/abs/2308.05695).
 
 
 ## Data
