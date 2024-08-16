@@ -3,7 +3,7 @@
 
 [Zixuan Pan](https://scholar.google.com/citations?user=3VuW2gcAAAAJ&hl=en), [Jun Xia](https://scholar.google.com/citations?user=K4JXEHUAAAAJ&hl=en&oi=ao), [Zheyu Yan](https://sites.nd.edu/zheyu-yan/), [Guoyue Xu](https://scholar.google.com/citations?hl=en&user=ntl9gCYAAAAJ), [Yawen Wu](https://sdwuyawen.github.io), [Zhenge Jia](https://zhengejia.github.io), [Jianxu Chen](https://scholar.google.com/citations?hl=en&user=HdolpOgAAAAJ), [Yiyu Shi](https://scholar.google.com/citations?hl=en&user=LrjbEkIAAAAJ&view_op=list_works)
 
-[![Paper](https://img.shields.io/badge/cs.CV-2408.08228-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/abs/2408.08228)
+[![Paper](https://img.shields.io/badge/eess.IV-2408.08228-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/abs/2408.08228)
 <a href='https://an-xu.github.io/MedAD-IQA.github.io/'><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 
