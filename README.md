@@ -3,13 +3,13 @@
 
 [Zixuan Pan](https://scholar.google.com/citations?user=3VuW2gcAAAAJ&hl=en), [Jun Xia](https://scholar.google.com/citations?user=K4JXEHUAAAAJ&hl=en&oi=ao), [Zheyu Yan](https://sites.nd.edu/zheyu-yan/), [Guoyue Xu](https://scholar.google.com/citations?hl=en&user=ntl9gCYAAAAJ), [Yawen Wu](https://sdwuyawen.github.io), [Zhenge Jia](https://zhengejia.github.io), [Jianxu Chen](https://scholar.google.com/citations?hl=en&user=HdolpOgAAAAJ), [Yiyu Shi](https://scholar.google.com/citations?hl=en&user=LrjbEkIAAAAJ&view_op=list_works)
 
-[![Paper](https://img.shields.io/badge/cs.CV-2308.05695-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/abs/2308.05695)
+[![Paper](https://img.shields.io/badge/cs.CV-2408.08228-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/abs/2408.08228)
 </div>
 
 <div align=center><img width="500" src="model.png"/></div>
 
 Official PyTorch/GPU implementation of the paper
-[Rethinking Medical Anomaly Detection in Brain MRI: An Image Quality Assessment Perspective](https://arxiv.org/abs/2308.05695).
+[Rethinking Medical Anomaly Detection in Brain MRI: An Image Quality Assessment Perspective](https://arxiv.org/abs/2408.08228).
 
 
 ## Data
@@ -180,3 +180,17 @@ Refer to the paper for more results and details.
 ## Acknowledgement
 
 This code base is inspired and built-upon from [pddpm-uad](https://github.com/FinnBehrendt/patched-Diffusion-Models-UAD)
+
+## Cite
+If you find this repository useful, please use the following BibTeX entry for citation.
+```
+@misc{pan2024rethinkingmedicalanomalydetection,
+      title={Rethinking Medical Anomaly Detection in Brain MRI: An Image Quality Assessment Perspective}, 
+      author={Zixuan Pan and Jun Xia and Zheyu Yan and Guoyue Xu and Yawen Wu and Zhenge Jia and Jianxu Chen and Yiyu Shi},
+      year={2024},
+      eprint={2408.08228},
+      archivePrefix={arXiv},
+      primaryClass={eess.IV},
+      url={https://arxiv.org/abs/2408.08228}, 
+}
+```
