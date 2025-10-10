@@ -1,0 +1,76 @@
+_target_: src.datamodules.Datamodules_train.Brats
+
+cfg:
+  name: Brats
+  path:
+    pathBase: ${data_dir}
+
+    Brats_train:
+      IDs:
+        train:
+          - ${data_dir}/t1ce/Brats21/splits/train_fold_0.csv
+          - ${data_dir}/t1ce/Brats21/splits/train_fold_1.csv
+          - ${data_dir}/t1ce/Brats21/splits/train_fold_2.csv
+          - ${data_dir}/t1ce/Brats21/splits/train_fold_3.csv
+          - ${data_dir}/t1ce/Brats21/splits/train_fold_4.csv
+        val:
+          - ${data_dir}/t1ce/Brats21/splits/val_fold_0.csv
+          - ${data_dir}/t1ce/Brats21/splits/val_fold_1.csv
+          - ${data_dir}/t1ce/Brats21/splits/val_fold_2.csv
+          - ${data_dir}/t1ce/Brats21/splits/val_fold_3.csv
+          - ${data_dir}/t1ce/Brats21/splits/val_fold_4.csv
+    Brats21:
+      IDs:
+        test:
+        - ${data_dir}/t1ce/Brats21/splits/anomaly_test_fold_0.csv
+        - ${data_dir}/t1ce/Brats21/splits/anomaly_test_fold_1.csv
+        - ${data_dir}/t1ce/Brats21/splits/anomaly_test_fold_2.csv
+        - ${data_dir}/t1ce/Brats21/splits/anomaly_test_fold_3.csv
+        - ${data_dir}/t1ce/Brats21/splits/anomaly_test_fold_4.csv
+
+        val:
+        - ${data_dir}/t1ce/Brats21/splits/anomaly_val_fold_0.csv
+        - ${data_dir}/t1ce/Brats21/splits/anomaly_val_fold_1.csv
+        - ${data_dir}/t1ce/Brats21/splits/anomaly_val_fold_2.csv
+        - ${data_dir}/t1ce/Brats21/splits/anomaly_val_fold_3.csv
+        - ${data_dir}/t1ce/Brats21/splits/anomaly_val_fold_4.csv
+
+  imageDim: [160,192,160]
+  rescaleFactor: 2
+  interRes: [8,8,5] #[HxWxD]
+  cropMode: 'isotropic'
+  spatialDims: ${model.cfg.spatialDims}
+  unisotropic_sampling: True
+  sample_set: False
+
+  preLoad: True
+  curvatureFlow: True
+  percentile: True
+  pad: True
+  permute: False
+
+  # Augmentations
+  randomRotate: False
+  rotateDegree: 5
+  horizontalFlip: False
+  randomBrightness: False
+  brightnessRange: (0.75,1.25)
+  randomContrast: False
+  contrastRange: (0.75,1.25)
+
+  modelpath: ${data_dir}/Data/pretrained_2D_model/
+  num_workers: 4
+  batch_size: 32
+  lr : 0.0001
+  droplast: True
+
+
+  # Evaluation
+  mode: t1ce
+  brain_only: True
+  resizedEvaluation: True
+  testsets: # specify which test sets to evaluate!
+  - Datamodules_eval.Brats21
+  - Datamodules_train.Brats
+
+
