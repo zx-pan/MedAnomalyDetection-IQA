@@ -185,13 +185,15 @@ This code base is inspired and built-upon from [pddpm-uad](https://github.com/Fi
 ## Cite
 If you find this repository useful, please use the following BibTeX entry for citation.
 ```
-@misc{pan2024rethinkingmedicalanomalydetection,
-      title={Rethinking Medical Anomaly Detection in Brain MRI: An Image Quality Assessment Perspective}, 
-      author={Zixuan Pan and Jun Xia and Zheyu Yan and Guoyue Xu and Yawen Wu and Zhenge Jia and Jianxu Chen and Yiyu Shi},
-      year={2024},
-      eprint={2408.08228},
-      archivePrefix={arXiv},
-      primaryClass={eess.IV},
-      url={https://arxiv.org/abs/2408.08228}, 
-}
+@INPROCEEDINGS{11356914,
+  author={Pan, Zixuan and Xia, Jun and Yan, Zheyu and Xu, Guoyue and Qin, Yifan and Li, Xueyang and Wu, Yawen and Jia, Zhenge and Chen, Jianxu and Shi, Yiyu},
+  booktitle={2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)}, 
+  title={Rethinking Medical Anomaly Detection in Brain MRI: An Image Quality Assessment Perspective}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={3985-3990},
+  keywords={Image quality;Technological innovation;Sensitivity;Codes;Magnetic resonance imaging;Biomedical measurement;Indexes;Anomaly detection;Image reconstruction;Biomedical imaging;Anomaly detection;DDPM;Image quality as-sessment},
+  doi={10.1109/BIBM66473.2025.11356914}}
+
 ```
